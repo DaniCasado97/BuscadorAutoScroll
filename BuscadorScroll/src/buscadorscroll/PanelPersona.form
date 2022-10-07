@@ -38,9 +38,7 @@
                       <Component id="labelNombre" pref="800" max="32767" attributes="0"/>
                       <Component id="labelDesc" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="botonCopiar" min="-2" pref="150" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -51,17 +49,9 @@
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="labelNombre" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="labelDesc" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="botonCopiar" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <Component id="labelNombre" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="labelDesc" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="12" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -82,17 +72,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="botonCopiar">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="12" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Copiar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonCopiarActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="labelDesc">
       <Properties>

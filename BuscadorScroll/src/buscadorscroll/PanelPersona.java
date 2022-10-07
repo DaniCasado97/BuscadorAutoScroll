@@ -39,7 +39,6 @@ class PanelPersona extends javax.swing.JPanel {
     private void initComponents() {
 
         labelNombre = new javax.swing.JLabel();
-        botonCopiar = new javax.swing.JButton();
         labelDesc = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -50,14 +49,6 @@ class PanelPersona extends javax.swing.JPanel {
         labelNombre.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         labelNombre.setForeground(new java.awt.Color(102, 102, 102));
         labelNombre.setText("jLabel1");
-
-        botonCopiar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        botonCopiar.setText("Copiar");
-        botonCopiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonCopiarActionPerformed(evt);
-            }
-        });
 
         labelDesc.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         labelDesc.setForeground(new java.awt.Color(102, 102, 102));
@@ -74,9 +65,7 @@ class PanelPersona extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(labelNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
                         .addComponent(labelDesc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGap(18, 18, 18)
-                    .addComponent(botonCopiar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap()))
+                    .addGap(174, 174, 174)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -84,31 +73,14 @@ class PanelPersona extends javax.swing.JPanel {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(12, 12, 12)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(labelNombre)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(labelDesc))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(botonCopiar)
-                            .addGap(3, 3, 3)))
+                    .addComponent(labelNombre)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(labelDesc)
                     .addContainerGap(12, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * Copia al portapapeles el comodin correspondiente, mostrando un tooltip informativo para el usuario
-     * @param evt 
-     */
-    private void botonCopiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCopiarActionPerformed
-        
-        StringSelection stringSelection = new StringSelection(this.persona.nombre);
-        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-        clipboard.setContents(stringSelection, null);
-    }//GEN-LAST:event_botonCopiarActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botonCopiar;
     protected javax.swing.JLabel labelDesc;
     protected javax.swing.JLabel labelNombre;
     // End of variables declaration//GEN-END:variables
